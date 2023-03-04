@@ -130,7 +130,7 @@ export default function Example() {
                 Information design for better health communication
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Hi, I'm Jihee, an interactive information designer in the healthcare field.
+                Hi, I&apos;m Jihee, an interactive information designer in the healthcare field.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
