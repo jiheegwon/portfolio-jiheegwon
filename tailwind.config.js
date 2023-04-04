@@ -7,16 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
+        transparent: "transparent",
+        current: "currentColor",
         primary: {
-          light: '#FFDAD4',
-          DEFAULT: '#F63218',
-          dark: '#A71A07',
-        }
-      }
+          light: "#FFDAD4",
+          DEFAULT: "#F63218",
+          dark: "#A71A07",
+        },
+        secondary: {
+          light: "#C4EDD3",
+          DEFAULT: "#328056",
+          dark: "#193C35",
+        },
+      },
     },
   },
   plugins: [],
-}
+};
