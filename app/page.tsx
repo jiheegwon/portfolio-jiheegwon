@@ -1,11 +1,13 @@
 "use client";
 
+import Button from "@/components/ui/Button";
+
 export default function Home() {
   return (
     <div className="relative px-6 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-primary ring-1 ring-bg-primary-light hover:ring-gray-900/20">
             Portfolio: Jihee Gwon{" "}
             {/* <a href="#" className="font-semibold text-indigo-600">
                   <span className="absolute inset-0" aria-hidden="true" />
@@ -14,7 +16,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl">
             Information design for better healthcare communication
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -23,15 +25,12 @@ export default function Home() {
             design solutions for eHealth.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
+            <Button>
+              <a href="/projects">See Projects</a>
+            </Button>
             <a
-              href="#"
-              className="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              See Projects
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              href="/aboutme"
+              className="text-sm font-semibold leading-6 text-gray-800"
             >
               About me <span aria-hidden="true">→</span>
             </a>
@@ -58,7 +57,7 @@ export default function Home() {
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#F63218" />
+              <stop offset={1} stopColor="#FF5733" />
             </linearGradient>
           </defs>
         </svg>

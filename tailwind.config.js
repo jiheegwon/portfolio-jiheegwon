@@ -15,15 +15,19 @@ module.exports = {
         transparent: "transparent",
         current: "currentColor",
         primary: {
-          light: "#FFDAD4",
-          DEFAULT: "#F63218",
-          dark: "#A71A07",
+          light: "#70A9FF",
+          DEFAULT: "#0F3CBF",
+          dark: "#1A2A6C",
         },
         secondary: {
           light: "#C4EDD3",
-          DEFAULT: "#328056",
+          DEFAULT: "#FF5733",
           dark: "#193C35",
         },
+      },
+
+      dropShadow: {
+        blue: "0 0 10px 2px rgba(66,153,225,0.5)",
       },
     },
   },

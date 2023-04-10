@@ -5,3 +5,7 @@
 .button {
   @apply p-3 bg-indigo-500 rounded text-white;
 }
+
+.markdown a {
+  @apply underline font-semibold;
+}

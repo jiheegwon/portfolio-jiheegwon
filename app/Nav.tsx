@@ -1,15 +1,15 @@
 "use client";
 
-import logo from "@/image/logo-jg.svg";
+import logo from "@/images/logo-jg.svg";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Projects", href: "#" },
+  { name: "Projects", href: "/projects" },
   { name: "About Me", href: "/aboutme" },
-  { name: "Contact", href: "#" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Nav() {
@@ -20,7 +20,7 @@ export default function Nav() {
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Jihee Gwon</span>
             <Image
               className="h-14"
               src={logo}
@@ -63,12 +63,8 @@ export default function Nav() {
         <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <span className="sr-only">Jihee Gwon</span>
+              <Image className="h-14" src={logo} alt="JG" />
             </a>
             <button
               type="button"
@@ -92,14 +88,6 @@ export default function Nav() {
                   </a>
                 ))}
               </div>
-              {/* <div className="py-6">
-              <a
-                href="#"
-                className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
-              >
-                Log in
-              </a>
-            </div> */}
             </div>
           </div>
         </Dialog.Panel>

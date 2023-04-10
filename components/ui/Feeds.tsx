@@ -40,19 +40,16 @@ export default function Example({ timeline }: { timeline: FeedItem[] }) {
                     />
                   </span>
                 </div>
-                <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                <div className="flex min-w-0 flex-1 justify-between space-x-10 pt-1.5">
                   <div>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-base text-gray-600">
                       {event.content}{" "}
-                      <a
-                        href={event.href}
-                        className="font-medium text-gray-900"
-                      >
+                      <a href={event.href} className="font-light text-gray-400">
                         {event.target}
                       </a>
                     </p>
                   </div>
-                  <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                  <div className="whitespace-nowrap text-right text-gray-400 font-light">
                     <time dateTime={event.datetime}>{event.date}</time>
                   </div>
                 </div>
