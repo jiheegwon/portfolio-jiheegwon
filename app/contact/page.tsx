@@ -1,12 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import {
-  EnvelopeIcon,
-  PhoneIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
 import workingpic from "@/images/jihee_working.png";
+import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
@@ -23,7 +19,7 @@ const ContactPage = () => {
             <div className="flex items-center space-x-2">
               <EnvelopeIcon className="h-5 w-5 text-primary" />
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:design@jiheegwon.com"
                 className="text-base text-gray-700 hover:text-primary"
               >
                 design@jiheegwon.com
