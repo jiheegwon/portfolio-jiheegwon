@@ -22,14 +22,13 @@ const ProjectDetailPage = ({ params }: { params: any }) => {
         <h3 className="text-4xl font-extralight text-secondary mb-4">
           projects/
         </h3>
-        <h1 className="text-6xl font-medium text-gray-800 mb-12">
+        <h1 className="text-5xl sm:text-6xl font-medium text-gray-800 mb-12">
           {project.title}
         </h1>
-        <div className="md:w-1/2">
-          <p className="text-gray-600 font-light text-lg mb-4">
-            {project.description}
-          </p>
-        </div>
+
+        <p className="text-gray-600 font-light text-lg mb-4">
+          {project.description}
+        </p>
       </div>
 
       <div className="mx-auto">
@@ -98,12 +97,12 @@ const ProjectDetailPage = ({ params }: { params: any }) => {
           <div className="md:w-1/2">
             <h2 className="text-4xl font-light text-primary mb-4">Features</h2>
           </div>
-          <div className="md:w-1/2 md:pl-8">
-            <ul className="list-disc list-outside marker:text-primary mb-4">
+          <div className="md:w-1/2 md:pl-4">
+            <ul className="list-disc list-outside marker:text-primary ml-4">
               {project.features?.map((feature) => (
                 <li
                   key={feature}
-                  className="text-gray-600 font-light mb-4 whitespace-pre-wrap"
+                  className="text-gray-600 font-light whitespace-pre-wrap"
                 >
                   {feature}
                 </li>

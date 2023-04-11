@@ -72,6 +72,9 @@ import MyTargetImage4 from "@/images/projects/mytarget/4.jpg";
 import MyTargetImage5 from "@/images/projects/mytarget/5.jpg";
 
 import coverIspine from "@/images/projects/ispine/main.jpg";
+import Ispine1 from "@/images/projects/ispine/1.jpg";
+import Ispine2 from "@/images/projects/ispine/2.jpg";
+
 import coverBcknowledge from "@/images/projects/bc-knowledge/main.jpg";
 import BcImage1 from "@/images/projects/bc-knowledge/1.jpg";
 import BcImage2 from "@/images/projects/bc-knowledge/2.jpg";
@@ -87,11 +90,11 @@ import Nutreat6 from "@/images/projects/nutreat/6.jpg";
 export const projects = [
   {
     id: "crosssoft-webshop",
-    title: "CROSSSOFT Webshop",
+    title: "CROSSSOFT Webshop for clinics",
     for: "CROSSSOFT. GmbH",
     when: "2022",
     description:
-      "UI/UX design for a webshop mainly for the hardware configuration",
+      "UI/UX design for a webshop mainly for the hardware configuration for clinic",
     category: "UI/UX Web",
     coverImage: coverWebshop,
     fullImage: webshopDiagram,
@@ -114,10 +117,11 @@ export const projects = [
   },
   {
     id: "crossnfp-web",
-    title: "CROSSNFP Web Presentation",
+    title: "CROSSNFP for emergency clinics",
     for: "CROSSSOFT. GmbH",
     when: "2021",
-    description: "Product Presentation in website",
+    description:
+      "CROSSNFP is a innovative service for collaboration in emergency clinics",
     category: "Digital Presentation",
     coverImage: coverNfp,
     fullImage: fullNfp,
@@ -190,7 +194,8 @@ export const projects = [
     title: "CROSSBUSTER Package",
     for: "CROSSSOFT. GmbH",
     when: "2021",
-    description: "Package design of a mini computer for clinics in Germany",
+    description:
+      "Package design of a mini server computer for clinics in Germany",
     category: "Package design",
     coverImage: coverPackage,
     fullImage: PackageImage1,
@@ -241,7 +246,8 @@ export const projects = [
     title: "myTarget",
     for: "Kompetenznetz Darmerkrankungen e.V.",
     when: "2019",
-    description: "UI/UX design for an app used in clinics in Germany",
+    description:
+      "A healthcare app, which supports Inflammatory bowel disease (IBD) patients.",
     category: "UI/UX App",
     coverImage: MyTargetImage1,
     projectImages: [
@@ -259,7 +265,8 @@ export const projects = [
     title: "Gut Microbiota",
     for: "Master project (supervised by Prof. Tom Duscher)",
     when: "2020",
-    description: "UI/UX design for a gut microbiota app",
+    description:
+      "A digital learning platform with the topic about a gut microbiota",
     category: "UI/UX App",
     coverImage: coverGutMicrobiota,
     fullImage: coverGutMicrobiota,
@@ -269,11 +276,26 @@ export const projects = [
     features: [],
   },
   {
+    id: "ispine",
+    title: "iSpine",
+    for: "InterMedCon GmbH",
+    when: "2019",
+    description:
+      "A healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain",
+    category: "UI/UX App",
+    coverImage: coverIspine,
+    projectImages: [Ispine1, Ispine2],
+    discovery:
+      "iSpine is a healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain. A motivational app for intensive self and remote monitoring at home. ISpine is a research project - Eurostars funded by the BMBF - which has primarily targeted the care of patients with chronic back pain. Through the project team with the Danish partner Sensmotion® and InterMedCon GmbH, a digital platform with a sensor (connected via Bluetooth) was developed for patients, doctors, nurses and physiotherapists.",
+    features: [],
+  },
+  {
     id: "bc-knowledge",
     title: "BC Knowledge",
     for: "BA graduation project",
     when: "2018",
-    description: "UI/UX design for a knowledge-sharing app",
+    description:
+      "A helathcare app which informs patients and their families about various aspects of breast cancer with infographics.",
     category: "UI/UX App",
     coverImage: coverBcknowledge,
     fullImage: BcImage1,
@@ -288,7 +310,8 @@ export const projects = [
     title: "nutreat",
     for: "Semester Teamproject „Augemented Utopia“ ",
     when: "2018",
-    description: "UI/UX design for a nutrition-related app",
+    description:
+      "An augmented reality app, which is designed to help the user maintain a healthy and balanced diet.",
     category: "UI/UX App",
     coverImage: coverNutreat,
     fullImage: ParkinglotImage7,
