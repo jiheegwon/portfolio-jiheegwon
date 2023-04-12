@@ -1,10 +1,13 @@
 "use client";
 
 import Button from "@/components/ui/Button";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div className="relative px-6 lg:px-8">
+    <div className="relative px-6 lg:px-8 overflow-hidden">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-primary ring-1 ring-bg-primary-light hover:ring-gray-900/20">
@@ -25,19 +28,19 @@ export default function Home() {
             design solutions for eHealth.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button>
-              <a href="/projects">See Projects</a>
+            <Button onClick={() => router.push("/projects")}>
+              See Projects
             </Button>
-            <a
+            <Link
               href="/aboutme"
               className="text-sm font-semibold leading-6 text-gray-800"
             >
               About me <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-20 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-45rem)]">
         <svg
           className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
           viewBox="0 0 1155 678"

@@ -33,8 +33,7 @@ const ProjectsOverview = ({}: { params: any }) => {
                 <Image
                   src={project.coverImage}
                   alt=""
-                  className="object-cover rounded flex h-full w-full "
-                  unoptimized
+                  className="object-cover rounded flex h-full w-full"
                 />
               </div>
               <h2 className="mt-6 text-lg font-semibold text-zinc-800  group-hover:text-primary-dark dark:text-zinc-100">

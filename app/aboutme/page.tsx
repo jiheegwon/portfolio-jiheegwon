@@ -75,6 +75,7 @@ const AboutMePage = () => {
             className="w-52 h-52 object-cover rounded-full"
             src={profilepic}
             alt="Jihee's profile picture"
+            width={800}
           />
         </div>
         <div className="flex-1 sm:pl-8 sm:pr-16 sm:py-0 px-8 pb-11 pt-4 sm:pb-0">

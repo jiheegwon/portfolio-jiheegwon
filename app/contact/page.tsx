@@ -34,12 +34,7 @@ const ContactPage = () => {
         </div>
 
         <div className="">
-          <Image
-            className="w-full"
-            src={workingpic}
-            alt="Contact Me"
-            objectFit="cover"
-          />
+          <Image className="w-full" src={workingpic} alt="Contact Me" />
         </div>
       </div>
     </div>
