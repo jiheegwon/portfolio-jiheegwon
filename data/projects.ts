@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+import coverMidjourney from "@/images/projects/midjourney/cover.jpg";
+import Midjourney1 from "@/images/projects/midjourney/1.jpg";
+import Midjourney2 from "@/images/projects/midjourney/2.jpg";
+
 import coverWebshop from "@/images/projects/crosssoft-webshop/2.jpg";
 import webshopDiagram from "@/images/projects/crosssoft-webshop/diagram.jpg";
 import webshopImage1 from "@/images/projects/crosssoft-webshop/1.jpg";
@@ -88,6 +92,19 @@ import Nutreat5 from "@/images/projects/nutreat/5.jpg";
 import Nutreat6 from "@/images/projects/nutreat/6.jpg";
 
 export const projects = [
+  {
+    id: "midjourney",
+    title: "Jungle illustration by AI",
+    for: "Personal project",
+    when: "2023",
+    description: "AI tool experiment for flat illustrations",
+    category: "Illustration",
+    coverImage: coverMidjourney,
+    projectImages: [Midjourney1, Midjourney2],
+    discovery:
+      "Midjourney is an exciting AI tool that is taking the art and design world by storm. I was intrigued by the idea of generating images from natural language descriptions. So, I decided to give Midjourney a try to see what all the fuss was about. Using Midjourney was a fun and exciting experience. I loved seeing the program generate images based on my prompts and experimenting with different phrases to see what kind of results I would get. While it may not be perfect for all design projects, Midjourney is a valuable tool for generating illustrations quickly and easily and getting inspired.",
+    features: ["AI tool experiment", "Midjourney"],
+  },
   {
     id: "crosssoft-webshop",
     title: "CROSSSOFT Webshop for clinics",
