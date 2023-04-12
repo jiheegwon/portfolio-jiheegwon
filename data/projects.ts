@@ -284,7 +284,8 @@ export const projects = [
       "A healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain",
     category: "UI/UX App",
     coverImage: coverIspine,
-    projectImages: [Ispine1, Ispine2],
+    projectImages: [Ispine1],
+    fullImage: Ispine2,
     discovery:
       "iSpine is a healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain. A motivational app for intensive self and remote monitoring at home. ISpine is a research project - Eurostars funded by the BMBF - which has primarily targeted the care of patients with chronic back pain. Through the project team with the Danish partner Sensmotion® and InterMedCon GmbH, a digital platform with a sensor (connected via Bluetooth) was developed for patients, doctors, nurses and physiotherapists.",
     features: [],
@@ -314,8 +315,8 @@ export const projects = [
       "An augmented reality app, which is designed to help the user maintain a healthy and balanced diet.",
     category: "UI/UX App",
     coverImage: coverNutreat,
-    fullImage: ParkinglotImage7,
-    projectImages: [Nutreat2, Nutreat3, Nutreat4, Nutreat5, Nutreat6],
+    fullImage: Nutreat3,
+    projectImages: [Nutreat2, Nutreat4, Nutreat5, Nutreat6],
     discovery:
       "Nutreat is a concept for an augmented reality app, which is designed to help the user maintain a healthy and balanced diet. The main feature is the smart tracking function, with which the app is able to recognise and capture ingredients in real time. Once scanned, the app provides the user with detailed information about the nutrients and content of the food. In addition, it suggests many recipes, which are based on the last few scanned ingredients. Through a questioner, the users individual health requirements and personal diet goals are defined. These goals are always in the foreground and can be updated in the personal profile. Next to the personal profile, infographics compiled by the users statistics help keep track of relevant information. Here the user can also find a gallery with an overview of all recorded ingredients. The project was created in the winter semester 2017/18 at the Muthesius University of fine arts and design as part of the semester project „Augmented Utopia“ Nutreat is team project by Jade Deazle, Jihee Gwon, Johannes Longardt und Daniel Schaber.",
     features: [],
