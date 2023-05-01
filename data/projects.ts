@@ -1,5 +1,13 @@
 import Image from "next/image";
 
+import coverInfinityq from "@/images/projects/infinityq/cover.png";
+import InfinityqImage2 from "@/images/projects/infinityq/2.png";
+import InfinityqImage1 from "@/images/projects/infinityq/1.png";
+import InfinityqImage3 from "@/images/projects/infinityq/3.png";
+import InfinityqImage4 from "@/images/projects/infinityq/4.png";
+import InfinityqImage5 from "@/images/projects/infinityq/5.png";
+import InfinityqImage6 from "@/images/projects/infinityq/6.png";
+
 import coverMidjourney from "@/images/projects/midjourney/cover.jpg";
 import Midjourney1 from "@/images/projects/midjourney/1.jpg";
 import Midjourney2 from "@/images/projects/midjourney/2.jpg";
@@ -67,6 +75,8 @@ import ParkinglotImage15 from "@/images/projects/parkinglot/15.jpg";
 import ParkinglotImage16 from "@/images/projects/parkinglot/16.jpg";
 
 import coverGutMicrobiota from "@/images/projects/gut-microbiota/main.jpg";
+import GutMicrobiota1 from "@/images/projects/gut-microbiota/1.jpg";
+import GutMicrobiota2 from "@/images/projects/gut-microbiota/2.jpg";
 
 import coverMyTarget from "@/images/projects/mytarget/main.jpg";
 import MyTargetImage1 from "@/images/projects/mytarget/1.jpg";
@@ -93,6 +103,31 @@ import Nutreat6 from "@/images/projects/nutreat/6.jpg";
 
 export const projects = [
   {
+    id: "infinityq",
+    title: "INFINITY-Q",
+    for: "CROSSSOFT. GmbH",
+    when: "2023",
+    description:
+      "UI/UX design of an innovative collaboration tool for patients and healthcare professionals.",
+    category: "UI/UX App",
+    coverImage: coverInfinityq,
+    fullImage: [InfinityqImage1, InfinityqImage3],
+    videoUrls: ["https://www.youtube.com/embed/4mFtmZB55-8"],
+    projectImages: [
+      InfinityqImage2,
+      InfinityqImage4,
+      InfinityqImage5,
+      InfinityqImage6,
+    ],
+    discovery:
+      "INFINITYQ is a groundbreaking secure collaboration application that is transforming the healthcare industry. With end-to-end encryption, healthcare professionals can share sensitive patient data in real-time. The platform includes real-time chat/video call functions, as well as a secure online medical history, symptoms, and diagnosis for direct communication with patients.\n\nOne of the challenges was to design a logical and user-friendly interface for presenting the complex medical history data, which would cater to various user groups such as minor patients, elderly patients, patients of different sexes, healthcare professionals, and healthcare organizations. Each user group had different requirements and situations that needed to be addressed. As a web and native app, responsive design was a key consideration in making the wide range of complex information accessible across various devices.",
+    features: [
+      "Powerful real-time collaboration: \nmakes easier to work with all important healthcare information",
+      "Visualized online medical history, symptoms and diagnosis for direct communication with patients: \nsave the time from writing all information in the clinic / hospital by patients",
+      "Integrated document management system (DMS): \nmore effectiv collaboration work on digital healthcare data with relavant healthcare providers",
+    ],
+  },
+  {
     id: "midjourney",
     title: "Jungle illustration by AI",
     for: "Personal project",
@@ -114,7 +149,7 @@ export const projects = [
       "UI/UX design for a webshop mainly for the hardware configuration for clinic",
     category: "UI/UX Web",
     coverImage: coverWebshop,
-    fullImage: webshopDiagram,
+    fullImage: [webshopDiagram],
     projectImages: [
       webshopImage1,
       webshopImage2,
@@ -141,7 +176,7 @@ export const projects = [
       "CROSSNFP is a innovative service for collaboration in emergency clinics",
     category: "Digital Presentation",
     coverImage: coverNfp,
-    fullImage: fullNfp,
+    fullImage: [fullNfp],
     discovery:
       "This project is a product presentation in the part of company website for CROSSSOFT's digital solution, CROSSNFP, designed for facilitating collaboration within emergency medical teams. The aim was to showcase the product's functionality and seamless integration with future cloud services in the healthcare industry. To achieve this, I utilized a minimalist flat illustration approach that effectively conveyed the product's essence and character while maintaining a professional and polished appearance based on the product color.",
     features: [
@@ -159,7 +194,7 @@ export const projects = [
       "Operating System design including icon style, setting area, and wallpapers",
     category: "OS design",
     coverImage: CROSSOSImage13,
-    fullImage: fullCROSSOS,
+    fullImage: [fullCROSSOS],
     projectImages: [
       CROSSOSImage1,
       CROSSOSImage2,
@@ -215,7 +250,7 @@ export const projects = [
       "Package design of a mini server computer for clinics in Germany",
     category: "Package design",
     coverImage: coverPackage,
-    fullImage: PackageImage1,
+    fullImage: [PackageImage1],
     projectImages: [PackageImage2, PackageImage3, PackageImage5, PackageImage4],
     discovery:
       "The CROSSBUSTER CSB-1 is a high-performance server computer for clinics and hospitals. I designed a package for this computer with different components like a wall-mount and cables. A short brochure as a Quick-Start-Guide for this product was also included in this design project. Five Stripes on the side of the packages were the main motive, which comes from air vents on the front and back sides of the computer.",
@@ -233,7 +268,7 @@ export const projects = [
       "Infographic project about the environmental effect related to health",
     category: "Infographic",
     coverImage: coverParkinglot,
-    fullImage: ParkinglotImage7,
+    fullImage: [ParkinglotImage7],
     projectImages: [
       ParkinglotImage1,
       ParkinglotImage2,
@@ -275,7 +310,7 @@ export const projects = [
     ],
     discovery:
       "My Target is a healthcare app, which supports Inflammatory bowel disease (IBD) patients including Ulcerative colitis and Crohn‘s disease. The App will be released for all those patients, but especially it provides ‚Study‘ menu function for patients in Germany, who participate in project ‚Target Register‘. Target Register is a study with patients with biologics/biosimilar/ Janus kinase inhibitor therapy. In this function, participants can fill the study survey in this app instead of an analog paper survey. Parallel, there are many useful functions for all patients for Self-management by My Tracking function, knowledge about this illness. Available in Google play store and Apple Store",
-    features: [],
+    features: ["Self tracking/documentation", "Medication", "Clinical survey"],
   },
   {
     id: "gut-microbiota",
@@ -286,11 +321,14 @@ export const projects = [
       "A digital learning platform with the topic about a gut microbiota",
     category: "UI/UX App",
     coverImage: coverGutMicrobiota,
-    fullImage: coverGutMicrobiota,
+    fullImage: [GutMicrobiota2, GutMicrobiota1],
     projectImages: [],
     discovery:
       "This project is designed to develop a web-based digital learning platform for gut microbiota education for students in higher education. The platform provides gut microbiota courses which include germ-free animal models and the effect of gut microbiota on health. The platform presents the contents with science visualization and animated infographics which explain effectively the complex scientific topics and make them memorable. It is also designed with functions, which make the interaction with professors and other students possible to get a maximum educational effect. It is optimized in the area of natural science, especially gut microbiota, through simplified visualization for better understanding than photorealistic. This visualization concept is proper for details of contents and complexity with animation as a blackboard technique, which is considered the cognitive perception for effective learning. Via the usage of this platform, students can study higher educational content at any time and in any place in their own tempo without losing the interactivity of conventional education. Professors or educators can spend more time to support smaller groups of students or individual questions by saving the time that was spent for giving conventional repetitive lessons. UI/UX design in the platform intends the needs of students by learning and engagement in education when the platform must cover the analog education in the case of physical distancing like a Covid-19 crisis.",
-    features: [],
+    features: [
+      "Interactive e-Learnig tool",
+      "Animated infographic in blackboard style",
+    ],
   },
   {
     id: "ispine",
@@ -301,11 +339,11 @@ export const projects = [
       "A healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain",
     category: "UI/UX App",
     coverImage: coverIspine,
-    projectImages: [Ispine1],
-    fullImage: Ispine2,
+    projectImages: [],
+    fullImage: [Ispine2],
     discovery:
       "iSpine is a healthcare app, which is intelligent self-monitoring for efficient outpatient treatment of back pain. A motivational app for intensive self and remote monitoring at home. ISpine is a research project - Eurostars funded by the BMBF - which has primarily targeted the care of patients with chronic back pain. Through the project team with the Danish partner Sensmotion® and InterMedCon GmbH, a digital platform with a sensor (connected via Bluetooth) was developed for patients, doctors, nurses and physiotherapists.",
-    features: [],
+    features: ["Pain & Workout tracking", "Exercise information"],
   },
   {
     id: "bc-knowledge",
@@ -316,12 +354,12 @@ export const projects = [
       "A helathcare app which informs patients and their families about various aspects of breast cancer with infographics.",
     category: "UI/UX App",
     coverImage: coverBcknowledge,
-    fullImage: BcImage1,
+    fullImage: [BcImage1],
 
     projectImages: [BcImage2, BcImage3],
     discovery:
       "Breast Cancer KNOWledge is an app that informs patients and their families about various aspects of breast cancer with infographics. In the main menu, it shows a whole-body divided by transparent rectangles into the different parts of the body that contain various information from emotions to physical activity. Through interactive infographics, it offers patients and interested people the opportunity to learn more about complex cancer in different medical topics.",
-    features: [],
+    features: ["Easy medical information"],
   },
   {
     id: "nutreat",
@@ -332,7 +370,7 @@ export const projects = [
       "An augmented reality app, which is designed to help the user maintain a healthy and balanced diet.",
     category: "UI/UX App",
     coverImage: coverNutreat,
-    fullImage: Nutreat3,
+    fullImage: [Nutreat3],
     projectImages: [Nutreat2, Nutreat4, Nutreat5, Nutreat6],
     discovery:
       "Nutreat is a concept for an augmented reality app, which is designed to help the user maintain a healthy and balanced diet. The main feature is the smart tracking function, with which the app is able to recognise and capture ingredients in real time. Once scanned, the app provides the user with detailed information about the nutrients and content of the food. In addition, it suggests many recipes, which are based on the last few scanned ingredients. Through a questioner, the users individual health requirements and personal diet goals are defined. These goals are always in the foreground and can be updated in the personal profile. Next to the personal profile, infographics compiled by the users statistics help keep track of relevant information. Here the user can also find a gallery with an overview of all recorded ingredients. The project was created in the winter semester 2017/18 at the Muthesius University of fine arts and design as part of the semester project „Augmented Utopia“ Nutreat is team project by Jade Deazle, Jihee Gwon, Johannes Longardt und Daniel Schaber.",

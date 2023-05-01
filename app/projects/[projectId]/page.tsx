@@ -80,17 +80,16 @@ const ProjectDetailPage = ({ params }: { params: any }) => {
         </div>
       )}
 
-      {project.fullImage && (
-        <div className="mx-auto mb-4">
+      <div className="mx-auto mb-4">
+        {project.fullImage?.map((fullImage) => (
           <Image
-            src={project.fullImage}
-            alt={project.title}
-            width={1500}
-            height={1200}
+            key={fullImage.toString()}
+            src={fullImage}
+            alt="project image"
             className="rounded-lg"
           />
-        </div>
-      )}
+        ))}
+      </div>
 
       {project.features && (
         <div className="flex flex-col md:flex-row my-16">
