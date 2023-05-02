@@ -27,31 +27,28 @@ const ProjectsOverview = ({}) => {
       <div className="my-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group relative flex flex-col items-start cursor-pointer hover:bg-slate-100 rounded-lg p-6"
-            >
-              <div className="object-cover relative z-10 flex h-60 w-full rounded items-center justify-center bg-white shadow-md shadow-zinc-800/10">
-                <Image
-                  src={project.coverImage}
-                  alt=""
-                  className="object-cover rounded flex h-full w-full"
-                />
-              </div>
+            <Link key={project.id} href={`/projects/${project.id}`}>
+              <div className="group relative flex flex-col items-start cursor-pointer hover:bg-slate-100 rounded-lg p-6">
+                <div className="object-cover relative z-10 flex h-60 w-full rounded items-center justify-center bg-white shadow-md shadow-zinc-800/10">
+                  <Image
+                    src={project.coverImage}
+                    alt=""
+                    className="object-cover rounded flex h-full w-full"
+                  />
+                </div>
 
-              <h2 className="mt-6 text-lg font-semibold text-zinc-800  group-hover:text-primary-dark">
-                <Link href={`/projects/${project.id}`}>
+                <h2 className="mt-6 text-lg font-semibold text-zinc-800  group-hover:text-primary-dark">
                   <span className="relative z-10">{project.title}</span>
-                </Link>
-              </h2>
-              <p className="relative z-10 mt-2 font-light text-zinc-600">
-                {project.description}
-              </p>
-              <p className="relative z-10 mt-6 flex text-sm text-primary-light transition group-hover:text-zinc-500">
-                <SwatchIcon className="w-6 h-6" />
-                <span className="ml-2">{project.category}</span>
-              </p>
-            </div>
+                </h2>
+                <p className="relative z-10 mt-2 font-light text-zinc-600">
+                  {project.description}
+                </p>
+                <p className="relative z-10 mt-6 flex text-sm text-primary-light transition group-hover:text-zinc-500">
+                  <SwatchIcon className="w-6 h-6" />
+                  <span className="ml-2">{project.category}</span>
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
